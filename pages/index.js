@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Footer } from '../components/footer'
+import { Headline } from '../components/headline'
 import { Links } from '../components/links'
 import styles from '../styles/Home.module.css'
 
@@ -14,15 +15,10 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Index Page</h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
+        <Headline title="Index Page" page="index"/>
         <Links />
       </main>
+
       <Footer />
     </div>
   )
