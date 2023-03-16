@@ -1,5 +1,5 @@
-import { Headline } from '../components/headline'
-import { Links } from '../components/links'
+import { Headline } from '../headline'
+import { Links } from '../links'
 import styles from './Main.module.css'
 
 export function Main(props) {
