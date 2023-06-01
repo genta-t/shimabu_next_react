@@ -3,7 +3,9 @@ import React from 'react'
 import '../styles/globals.css'
 import store from '../app/store'
 import { Provider } from 'react-redux'
+// import configureStore from './configureStore'
 
+// const store = configureStore()
 
 function MyApp({ Component, pageProps }) {
   return(
