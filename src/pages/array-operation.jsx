@@ -1,8 +1,6 @@
 import Head from 'next/head'
-import { useCallback, useEffect } from 'react'
 import { Footer } from '../components/footer'
 import { Header } from '../components/header'
-import { Main } from '../components/main'
 import styles from '../styles/Home.module.css'
 
 
@@ -192,6 +190,19 @@ const  ArrayOperation = () => {
   const prices = ["￥7", 500, 8123, 12];
   console.log(prices.toLocaleString("ja-JP", { style: "currency", currency: "JPY" }));
 
+  const array13 = [1, 2, 3];
+  console.log(array13.unshift(4, 5));
+  console.log(array13);
+
+  const array14 = ['a', 'b', 'c'];
+  const iterator1 = array14.values();
+  for (const value1 of iterator1) {
+    console.log(value1);
+  }
+
+  const arr8 = [1, 2, 3, 4, 5];
+  console.log(arr8.with(2, "d")); // [1, 2, "d", 4, 5]
+  console.log(arr8); // [1, 2, 3, 4, 5]
 
   return (
     <div className={styles.container}>
@@ -199,15 +210,6 @@ const  ArrayOperation = () => {
         <title>Array Operation Page</title>
       </Head>
       <Header />
-      {/* <p>{Array.from([1, 2, 3, 4], x => x + x)}</p> */}
-      {/* <div>
-        <p>{text}</p>
-      </div> */}
-      {/* {text.map(text => (
-        <div>
-          <p>{text}</p>
-        </div>
-      ))} */}
       <Footer />
     </div>
   )
